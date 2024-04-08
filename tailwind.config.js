@@ -31,6 +31,9 @@ module.exports = {
 			orange: '#D08770',
 			red: '#BF616A'
 		},
+		fontFamily: {
+			firacode: ['Fira Code', 'monospace'],
+		},
 		extend: {},
 	},
 	plugins: [
