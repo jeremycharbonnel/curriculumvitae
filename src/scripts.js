@@ -1,6 +1,7 @@
 document.addEventListener('alpine:init', () => {
     Alpine.data('app', () => ({
         currentTheme: null,
+        currentYear: new Date().getFullYear(),
 
         initTheme() {
             if (
