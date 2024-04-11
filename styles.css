@@ -17,12 +17,12 @@ html {
 
 /* Update selected text for Chrome, Safari and Opera */
 ::selection {
-    @apply bg-blue text-white;
+    @apply bg-black text-white;
 }
 
 /* Update selected text for IE, Edge and Firefox */
 ::-moz-selection {
-    @apply bg-blue text-white;
+    @apply bg-black text-white;
 }
 
 /* Force centered material icons */
