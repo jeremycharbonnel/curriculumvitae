@@ -34,7 +34,7 @@
                     @click="setTheme('dark')"
                     x-show="currentTheme === 'light'"
                 >
-                    <div class="h-7 w-7">
+                    <div>
                         <span class="material-symbols-rounded">dark_mode</span>
                     </div>
                 </button>
@@ -44,7 +44,7 @@
                     @click="setTheme('light')"
                     x-show="currentTheme === 'dark'"
                 >
-                    <div class="h-7 w-7">
+                    <div>
                         <span class="material-symbols-rounded">light_mode</span>
                     </div>
                 </button>
@@ -119,9 +119,9 @@
                 <div
                     class="flex flex-wrap items-center justify-center gap-16 px-4 py-16 md:flex-nowrap"
                 >
-                    <div class="flex flex-col gap-3">
+                    <div class="flex flex-col gap-4">
                         <div class="flex gap-3">
-                            <div class="h-6 w-6 animate-bounce text-red">
+                            <div class="animate-bounce text-red">
                                 <span class="material-symbols-rounded"
                                     >location_on</span
                                 >
@@ -135,7 +135,7 @@
                         </div>
 
                         <div class="flex gap-3">
-                            <div class="h-6 w-6">
+                            <div>
                                 <span class="material-symbols-rounded"
                                     >translate</span
                                 >
@@ -146,33 +146,31 @@
                             </p>
                         </div>
 
-                        <div class="flex gap-3">
-                            <div class="h-6 w-6">
+                        <a
+                            href="mailto:jeremy.charbonnel@outlook.com"
+                            target="_blank"
+                            class="-mx-3 -my-2 flex gap-3 rounded-full px-3 py-2 hover:bg-white-200 hover:dark:bg-black-200"
+                        >
+                            <div>
                                 <span class="material-symbols-rounded"
                                     >alternate_email</span
                                 >
                             </div>
-                            <a
-                                href="mailto:jeremy.charbonnel@outlook.com"
-                                target="_blank"
-                                class="hover:text-blue hover:dark:text-blue-200"
-                                >jeremy.charbonnel@outlook.com</a
-                            >
-                        </div>
+                            <div>jeremy.charbonnel@outlook.com</div>
+                        </a>
 
-                        <div class="flex gap-3">
-                            <div class="h-6 w-6">
+                        <a
+                            href="tel:+436781275176"
+                            target="_blank"
+                            class="-mx-3 -my-1 flex w-max gap-3 rounded-full px-3 py-2 hover:bg-white-200 hover:dark:bg-black-200"
+                        >
+                            <div>
                                 <span class="material-symbols-rounded"
                                     >smartphone</span
                                 >
                             </div>
-                            <a
-                                href="tel:+436781275176"
-                                target="_blank"
-                                class="hover:text-blue hover:dark:text-blue-200"
-                                >0(+43) 678 1275176</a
-                            >
-                        </div>
+                            <div>0(+43) 678 1275176</div>
+                        </a>
                     </div>
 
                     <div class="shrink">
@@ -313,8 +311,8 @@
                         class="flex flex-wrap items-center justify-center gap-1"
                     >
                         Jeremy Charbonnel
-                        <span class="flex items-center gap-1 text-green">
-                            <div class="h-7 w-7">
+                        <span class="flex items-center gap-1">
+                            <div>
                                 <span class="material-symbols-rounded"
                                     >alternate_email</span
                                 >
@@ -326,11 +324,11 @@
                         class="flex flex-wrap items-center justify-center gap-2"
                     >
                         <p>made with</p>
-                        <div class="h-7 w-7">
+                        <div>
                             <span class="material-symbols-rounded">code</span>
                         </div>
-                        <p>and</p>
-                        <div class="h-7 w-7">
+                        <p>&</p>
+                        <div class="text-red">
                             <span class="material-symbols-rounded"
                                 >favorite</span
                             >
@@ -340,14 +338,14 @@
                             <a
                                 href="https://tailwindcss.com/"
                                 target="_blank"
-                                class="hover:text-blue-200"
+                                class="rounded-full px-3 py-2 hover:bg-black-300"
                                 >tailwindCSS</a
                             >
                             &
                             <a
                                 href="https://alpinejs.dev/"
                                 target="_blank"
-                                class="hover:text-blue-200"
+                                class="rounded-full px-3 py-2 hover:bg-black-300"
                                 >alpineJS</a
                             >
                         </div>
