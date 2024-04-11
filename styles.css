@@ -15,10 +15,17 @@ html {
     scrollbar-width: none; /* Firefox */
 }
 
+/* Update selected text for Chrome, Safari and Opera */
 ::selection {
     @apply bg-blue text-white;
 }
 
+/* Update selected text for IE, Edge and Firefox */
 ::-moz-selection {
     @apply bg-blue text-white;
+}
+
+/* Force centered material icons */
+div:has(> span.material-symbols-rounded) {
+    @apply flex items-center justify-center;
 }
