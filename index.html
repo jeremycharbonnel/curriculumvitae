@@ -94,13 +94,20 @@
                                     >>= 10 years xp</span
                                 >
                             </div>
-                            <div class="flex items-center gap-1 pl-8">
-                                <template x-for="i in 11">
+                            <div
+                                class="relative flex w-max items-center gap-1 pl-8"
+                            >
+                                <template x-for="i in 10">
                                     <div
                                         class="h-2 w-2 rounded-full bg-green"
-                                        :class="i === 11 ? 'animate-bounce' : ''"
                                     ></div>
                                 </template>
+                                <div
+                                    class="absolute right-0 h-3 w-3 rounded-full bg-green"
+                                ></div>
+                                <div
+                                    class="h-3 w-3 animate-ping rounded-full bg-green"
+                                ></div>
                             </div>
                         </div>
                     </div>
@@ -126,7 +133,7 @@
                 <div
                     class="flex flex-wrap items-center justify-center gap-24 px-4 py-16 md:flex-nowrap"
                 >
-                    <div class="flex flex-col gap-4">
+                    <div class="flex flex-col gap-4 md:w-1/3">
                         <div class="flex gap-3">
                             <div class="animate-bounce text-red">
                                 <span class="material-symbols-rounded"
@@ -156,7 +163,7 @@
                         <a
                             href="mailto:jeremy.charbonnel@outlook.com"
                             target="_blank"
-                            class="-mx-3 -my-2 flex gap-3 rounded-full px-3 py-2 hover:bg-white-200 hover:dark:bg-black-200"
+                            class="-mx-3 -my-2 flex w-max gap-3 rounded-full px-3 py-2 hover:bg-white-200 hover:dark:bg-black-200"
                         >
                             <div>
                                 <span class="material-symbols-rounded"
@@ -180,8 +187,8 @@
                         </a>
                     </div>
 
-                    <div class="shrink">
-                        <p class="shrink">
+                    <div class="md:w-2/3">
+                        <p class="">
                             Lorem ipsum dolor sit amet consectetur adipisicing
                             elit. Sed id explicabo ad culpa quos ut voluptates
                             dolorum, nisi earum dolor rem ipsam voluptate quidem
@@ -449,6 +456,15 @@
                                     ></i>
                                     <div class="text-sm">electron</div>
                                 </div>
+                                <a
+                                    href="https://stackshare.io/jeremycharbonnel/complete"
+                                    target="_blank"
+                                    class="-mx-3 -my-2 flex gap-3 rounded-full px-3 py-2 hover:bg-white-200 hover:dark:bg-black-200"
+                                >
+                                    <div class="text-sm font-semibold">
+                                        ... see more
+                                    </div>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -528,7 +544,133 @@
                 ></path>
             </svg>
 
-            <div class="flex h-56 items-center justify-center">HOBBIES</div>
+            <div class="container mx-auto">
+                <!-- travels -->
+                <div
+                    class="flex flex-wrap items-center justify-center gap-8 px-4 py-16 md:flex-nowrap md:gap-24"
+                >
+                    <div class="flex justify-center md:w-1/3">
+                        <div class="relative flex items-center justify-center">
+                            <svg
+                                viewBox="0 0 200 200"
+                                class="absolute h-96 text-black dark:text-white-300"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M52.3,-65C64.7,-51.9,69.5,-32.5,70.3,-14.4C71,3.7,67.8,20.5,58.6,31.3C49.3,42.1,34.1,46.8,18.1,55C2.1,63.1,-14.6,74.6,-27.8,71.8C-41,69,-50.6,51.9,-58,35.3C-65.4,18.7,-70.7,2.7,-67.5,-11.4C-64.4,-25.4,-52.9,-37.4,-40.3,-50.5C-27.6,-63.5,-13.8,-77.6,3.1,-81.3C20,-85,39.9,-78.1,52.3,-65Z"
+                                    transform="translate(100 100)"
+                                />
+                            </svg>
+                            <img
+                                src="https://placehold.co/320x180"
+                                alt="travels"
+                                class="z-10 rounded-xl"
+                            />
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Asperiores repudiandae eligendi optio doloremque
+                        saepe nobis nemo eaque voluptate voluptatum rerum
+                        impedit necessitatibus, fugiat sed neque, distinctio
+                        aliquam esse. Iusto, ducimus!
+                    </div>
+                </div>
+
+                <!-- music -->
+                <div
+                    class="flex flex-wrap items-center justify-center gap-8 px-4 py-16 md:flex-nowrap md:gap-24"
+                >
+                    <div class="md:w-2/3">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. A, velit accusantium. Harum sunt nam quidem libero
+                        corporis unde inventore tempore laborum aut! Porro
+                        expedita dicta quam eum? Consectetur, deleniti cum?
+                    </div>
+                    <div class="flex justify-center md:w-1/3">
+                        <div class="relative flex items-center justify-center">
+                            <svg
+                                viewBox="0 0 200 200"
+                                class="absolute h-96 text-black dark:text-white-300"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M40.5,-58.2C52.9,-55,63.8,-44.5,70.3,-31.7C76.8,-18.8,78.9,-3.6,76.3,10.7C73.8,24.9,66.6,38.2,56.1,46.7C45.7,55.3,32.1,59.1,18.7,62.4C5.3,65.7,-7.8,68.5,-20.9,66.7C-34.1,65,-47.2,58.6,-54.4,48.3C-61.6,37.9,-62.8,23.6,-64.1,9.6C-65.5,-4.3,-67.1,-17.8,-65,-32.8C-63,-47.7,-57.4,-64.1,-45.9,-67.8C-34.5,-71.5,-17.2,-62.5,-1.6,-60C14,-57.5,28,-61.4,40.5,-58.2Z"
+                                    transform="translate(100 100)"
+                                />
+                            </svg>
+                            <img
+                                src="https://placehold.co/180x320"
+                                alt="travels"
+                                class="z-10 rounded-xl"
+                            />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- video-games -->
+                <div
+                    class="flex flex-wrap items-center justify-center gap-24 px-4 py-16 md:flex-nowrap"
+                >
+                    <div class="flex justify-center md:w-1/3">
+                        <div class="relative flex items-center justify-center">
+                            <svg
+                                viewBox="0 0 200 200"
+                                class="absolute h-96 text-black dark:text-white-300"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M36.8,-53.8C47.2,-43.1,54.7,-31.7,60.7,-18.5C66.7,-5.3,71.2,9.6,67,21.6C62.9,33.5,50.1,42.4,37.5,53.2C24.9,63.9,12.4,76.4,-1.8,78.9C-16.1,81.4,-32.1,73.9,-46.8,63.8C-61.5,53.8,-74.8,41.2,-81.4,25.4C-88.1,9.6,-88.1,-9.5,-79.5,-22.8C-71,-36.1,-54,-43.5,-39.4,-52.8C-24.7,-62,-12.3,-73.1,0.4,-73.7C13.2,-74.3,26.4,-64.4,36.8,-53.8Z"
+                                    transform="translate(100 100)"
+                                />
+                            </svg>
+                            <img
+                                src="https://placehold.co/180x320"
+                                alt="travels"
+                                class="z-10 rounded-xl"
+                            />
+                        </div>
+                    </div>
+                    <div class="md:w-2/3">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing
+                        elit. Commodi id aliquam nesciunt ut atque dolorem nihil
+                        aut, doloribus mollitia in, at blanditiis odio
+                        laudantium! Voluptates, ea voluptatem. Iste, dolore
+                        voluptate.
+                    </div>
+                </div>
+
+                <!-- board-games -->
+                <div
+                    class="flex flex-wrap items-center justify-center gap-24 px-4 py-16 md:flex-nowrap"
+                >
+                    <div class="md:w-2/3">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing
+                        elit. A, velit accusantium. Harum sunt nam quidem libero
+                        corporis unde inventore tempore laborum aut! Porro
+                        expedita dicta quam eum? Consectetur, deleniti cum?
+                    </div>
+                    <div class="flex justify-center md:w-1/3">
+                        <div class="relative flex items-center justify-center">
+                            <svg
+                                viewBox="0 0 200 200"
+                                class="absolute h-96 text-black dark:text-white-300"
+                            >
+                                <path
+                                    fill="currentColor"
+                                    d="M63,-63.4C79,-47,87.5,-23.5,83.3,-4.2C79.1,15.1,62.3,30.3,46.3,44.3C30.3,58.3,15.1,71.3,-3.9,75.2C-22.9,79,-45.8,73.9,-58.6,59.9C-71.4,45.8,-74.1,22.9,-72,2.1C-69.8,-18.6,-62.9,-37.3,-50.1,-53.6C-37.3,-70,-18.6,-84.2,2.4,-86.6C23.5,-89.1,47,-79.7,63,-63.4Z"
+                                    transform="translate(100 100)"
+                                />
+                            </svg>
+                            <img
+                                src="https://placehold.co/320x180"
+                                alt="travels"
+                                class="z-10 rounded-xl"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </div>
 
             <!-- transition -->
             <svg class="-mb-1 w-full text-black-400" viewBox="0 0 200 16">
