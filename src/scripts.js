@@ -2,6 +2,7 @@ document.addEventListener('alpine:init', () => {
     Alpine.data('app', () => ({
         currentTheme: null,
         currentYear: new Date().getFullYear(),
+        currentAge: new Date().getFullYear() - 1992,
 
         initTheme() {
             if (
