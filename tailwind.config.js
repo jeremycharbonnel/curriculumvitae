@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
     content: ['./*.{html,js}'],
     theme: {
@@ -32,7 +35,7 @@ module.exports = {
             red: '#BF616A',
         },
         fontFamily: {
-            firacode: ['Fira Code', 'monospace'],
+            firacode: ['Fira Code', ...defaultTheme.fontFamily.sans],
         },
         extend: {},
     },
