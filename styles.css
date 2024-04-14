@@ -12,12 +12,6 @@ body {
     font-family: 'Fira Code', monospace;
 }
 
-@supports (font-variation-settings: normal) {
-    body {
-        font-family: 'Fira Code VF', monospace;
-    }
-}
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 html::-webkit-scrollbar {
     display: none;
