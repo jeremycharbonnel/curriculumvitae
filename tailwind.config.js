@@ -1,7 +1,4 @@
 /** @type {import('tailwindcss').Config} */
-
-const defaultTheme = require('tailwindcss/defaultTheme')
-
 module.exports = {
     content: ['./*.{html,js}'],
     theme: {
@@ -35,13 +32,16 @@ module.exports = {
             red: '#BF616A',
         },
         fontFamily: {
-            firacode: ['Fira Code', ...defaultTheme.fontFamily.sans],
+            firacode: [
+                '"Fira Code", sans-serif',
+                {
+                    fontFeatureSettings:
+                        '"ss01", "ss02","ss03", "ss04", "ss05", "ss06", "zero", "onum"',
+                },
+            ],
         },
         extend: {},
     },
     darkMode: 'selector',
-    plugins: [
-        require('tailwindcss-hero-patterns'),
-        require('@tailwindcss/aspect-ratio'),
-    ],
+    plugins: [require('tailwindcss-hero-patterns')],
 }
