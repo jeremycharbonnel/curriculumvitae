@@ -35,7 +35,7 @@ module.exports = {
             red: '#BF616A',
         },
         fontFamily: {
-            firacode: ['"Fira Code"', ...defaultTheme.fontFamily.sans],
+            firacode: ['Fira Code', ...defaultTheme.fontFamily.sans],
         },
         extend: {},
     },
