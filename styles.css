@@ -4,11 +4,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&display=swap');
 
-.font-firacode {
-    font-feature-settings: 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06',
-        'zero', 'onum';
-}
-
 /* Hide scrollbar for Chrome, Safari and Opera */
 html::-webkit-scrollbar {
     display: none;
