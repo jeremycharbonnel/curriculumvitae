@@ -2,7 +2,10 @@ document.addEventListener('alpine:init', () => {
     Alpine.data('app', () => ({
         currentTheme: null,
         currentYear: new Date().getFullYear(),
-        currentAge: new Date().getFullYear() - 1992,
+        currentAge:
+            new Date(
+                new Date().getTime() - new Date(1992, 2, 23).getTime(),
+            ).getFullYear() - 1970,
 
         initTheme() {
             if (
@@ -21,6 +24,10 @@ document.addEventListener('alpine:init', () => {
         setTheme(theme) {
             localStorage.theme = theme
             this.initTheme()
+        },
+
+        getCurrentXp() {
+            return this.currentYear - 2014
         },
 
         init() {
