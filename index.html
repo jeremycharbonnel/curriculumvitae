@@ -45,25 +45,43 @@
         >
             <!-- theme selector -->
             <div class="flex w-full justify-end">
-                <button
-                    class="m-3 rounded-full p-2.5 hover:bg-white-300"
-                    @click="setTheme('dark')"
-                    x-show="currentTheme === 'light'"
-                >
-                    <div>
-                        <span class="material-symbols-rounded">dark_mode</span>
-                    </div>
-                </button>
+                <div class="m-3 flex items-center justify-end gap-2">
+                    <a
+                        href="./assets/jeremy_charbonnel_curriculum_vitae.pdf"
+                        target="_blank"
+                        class="rounded-full p-2.5 hover:bg-white-300 hover:dark:bg-black-100"
+                    >
+                        <div>
+                            <span class="material-symbols-rounded"
+                                >download</span
+                            >
+                        </div>
+                    </a>
 
-                <button
-                    class="m-3 rounded-full p-2.5 hover:bg-black-100"
-                    @click="setTheme('light')"
-                    x-show="currentTheme === 'dark'"
-                >
-                    <div>
-                        <span class="material-symbols-rounded">light_mode</span>
-                    </div>
-                </button>
+                    <button
+                        class="rounded-full p-2.5 hover:bg-white-300"
+                        @click="setTheme('dark')"
+                        x-show="currentTheme === 'light'"
+                    >
+                        <div>
+                            <span class="material-symbols-rounded"
+                                >dark_mode</span
+                            >
+                        </div>
+                    </button>
+
+                    <button
+                        class="rounded-full p-2.5 hover:bg-black-100"
+                        @click="setTheme('light')"
+                        x-show="currentTheme === 'dark'"
+                    >
+                        <div>
+                            <span class="material-symbols-rounded"
+                                >light_mode</span
+                            >
+                        </div>
+                    </button>
+                </div>
             </div>
 
             <div class="container mx-auto">
@@ -211,6 +229,7 @@
                             home. I'm excited to bring my professional
                             experience to the city and contribute to its tech
                             scene. <br />
+                            <br />
                             Thank you for considering my application. <br />
                             <span class="font-semibold"
                                 >ありがとうございます!</span
@@ -532,10 +551,9 @@
                 >
                     <!-- world-tour -->
                     <div class="space-y-1">
-                        <div class="font-semibold">
-                            <span class="text-green">||></span> 2023 - 2024
-                        </div>
-                        <div class="text-lg font-semibold text-green">
+                        <div class="font-light">2023 - 2024</div>
+                        <div class="text-lg font-semibold uppercase text-green">
+                            <span>->></span>
                             self-directed world tour
                         </div>
                         <div class="font-light">
@@ -549,10 +567,9 @@
 
                     <!-- campaigning-bureau -->
                     <div class="space-y-1">
-                        <div class="font-semibold">
-                            <span class="text-blue">->></span> 2021 - 2023
-                        </div>
-                        <div class="text-lg font-semibold text-blue">
+                        <div class="font-light">2021 - 2023</div>
+                        <div class="text-lg font-semibold uppercase text-blue">
+                            <span>->></span>
                             full-stack web-developer & front-end lead
                         </div>
                         <div class="font-light">
@@ -578,10 +595,9 @@
 
                     <!-- moonshiner -->
                     <div class="space-y-1">
-                        <div class="font-semibold">
-                            <span class="text-blue">->></span> 2019 - 2021
-                        </div>
-                        <div class="text-lg font-semibold text-blue">
+                        <div class="font-light">2019 - 2021</div>
+                        <div class="text-lg font-semibold uppercase text-blue">
+                            <span>->></span>
                             full-stack web & mobile-app team developer
                         </div>
                         <div class="font-light">
@@ -620,10 +636,11 @@
 
                     <!-- m2i -->
                     <div class="space-y-1">
-                        <div class="font-semibold">
-                            <span class="text-orange">||></span> 2017
-                        </div>
-                        <div class="text-lg font-semibold text-orange">
+                        <div class="font-light">2017</div>
+                        <div
+                            class="text-lg font-semibold uppercase text-purple"
+                        >
+                            <span>->></span>
                             PHP / MySQL teacher
                         </div>
                         <div class="font-light">
@@ -643,10 +660,11 @@
 
                     <!-- intern instructor -->
                     <div class="space-y-1">
-                        <div class="font-semibold">
-                            <span class="text-orange">||></span> 2016
-                        </div>
-                        <div class="text-lg font-semibold text-orange">
+                        <div class="font-light">2016</div>
+                        <div
+                            class="text-lg font-semibold uppercase text-purple"
+                        >
+                            <span>->></span>
                             internship supervisor
                         </div>
                         <div class="font-light">
@@ -666,10 +684,9 @@
 
                     <!-- easy-developpement -->
                     <div class="space-y-1">
-                        <div class="font-semibold">
-                            <span class="text-blue">->></span> 2014 - 2019
-                        </div>
-                        <div class="text-lg font-semibold text-blue">
+                        <div class="font-light">2014 - 2019</div>
+                        <div class="text-lg font-semibold uppercase text-blue">
+                            <span>->></span>
                             full-stack web & mobile-app developer, project &
                             client manager
                         </div>
@@ -709,10 +726,9 @@
 
                     <!-- ineris -->
                     <div class="space-y-1">
-                        <div class="font-semibold">
-                            <span class="text-blue">->></span> 2013 - 2014
-                        </div>
-                        <div class="text-lg font-semibold text-blue">
+                        <div class="font-light">2013 - 2014</div>
+                        <div class="text-lg font-semibold uppercase text-blue">
+                            <span>->></span>
                             full-stack web-developer
                         </div>
                         <div class="font-light">
@@ -769,10 +785,11 @@
                 >
                     <!-- BSC -->
                     <div class="space-y-1">
-                        <div class="font-semibold">
-                            <span class="text-purple">->></span> 2013
-                        </div>
-                        <div class="text-lg font-semibold text-purple">
+                        <div class="font-light">2013</div>
+                        <div
+                            class="text-lg font-semibold uppercase text-purple"
+                        >
+                            <span>->></span>
                             BSC degree
                         </div>
                         <div class="font-light">
@@ -791,10 +808,9 @@
 
                     <!-- second internship -->
                     <div class="space-y-1">
-                        <div class="font-semibold">
-                            <span class="text-blue">->></span> 2012
-                        </div>
-                        <div class="text-lg font-semibold text-blue">
+                        <div class="font-light">2012</div>
+                        <div class="text-lg font-semibold uppercase text-blue">
+                            <span>->></span>
                             full-stack web-development internship
                         </div>
                         <div class="font-light">
@@ -813,10 +829,11 @@
 
                     <!-- BTEC -->
                     <div class="space-y-1">
-                        <div class="font-semibold">
-                            <span class="text-purple">->></span> 2012
-                        </div>
-                        <div class="text-lg font-semibold text-purple">
+                        <div class="font-light">2012</div>
+                        <div
+                            class="text-lg font-semibold uppercase text-purple"
+                        >
+                            <span>->></span>
                             BTEC higher national diploma
                         </div>
                         <div class="font-light">
@@ -836,10 +853,9 @@
 
                     <!-- first internship -->
                     <div class="space-y-1">
-                        <div class="font-semibold">
-                            <span class="text-blue">->></span> 2011
-                        </div>
-                        <div class="text-lg font-semibold text-blue">
+                        <div class="font-light">2011</div>
+                        <div class="text-lg font-semibold uppercase text-blue">
+                            <span>->></span>
                             full-stack web-development internship
                         </div>
                         <div class="font-light">
@@ -858,10 +874,11 @@
 
                     <!-- C2I -->
                     <div class="space-y-1">
-                        <div class="font-semibold">
-                            <span class="text-purple">->></span> 2011
-                        </div>
-                        <div class="text-lg font-semibold text-purple">
+                        <div class="font-light">2011</div>
+                        <div
+                            class="text-lg font-semibold uppercase text-purple"
+                        >
+                            <span>->></span>
                             computer and information technology certificate
                         </div>
                         <div class="font-light">
@@ -881,10 +898,11 @@
 
                     <!-- a level -->
                     <div class="space-y-1">
-                        <div class="font-semibold">
-                            <span class="text-purple">->></span> 2010
-                        </div>
-                        <div class="text-lg font-semibold text-purple">
+                        <div class="font-light">2010</div>
+                        <div
+                            class="text-lg font-semibold uppercase text-purple"
+                        >
+                            <span>->></span>
                             scientific A-level
                         </div>
                         <div class="font-light">
