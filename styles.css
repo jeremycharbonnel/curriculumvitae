@@ -27,3 +27,7 @@ html {
 div:has(> span.material-symbols-rounded) {
     @apply flex items-center justify-center;
 }
+
+.link {
+    @apply underline decoration-1 underline-offset-8 transition-all duration-200 hover:decoration-4;
+}
