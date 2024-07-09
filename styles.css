@@ -38,5 +38,5 @@ div:has(> span.material-symbols-rounded) {
 }
 
 .link {
-    @apply underline decoration-1 underline-offset-8 transition-all duration-200 hover:decoration-4;
+    @apply text-red underline decoration-1 underline-offset-4 transition-all duration-200 hover:decoration-4 dark:text-green;
 }
